@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Overpass', sans-serif;
+  color: white;
+  background-color: rgb(14, 15, 19);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.hid {
+  display: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 420px;
+  height: 430px;
+  background: rgb(18, 25, 33);
+  background: linear-gradient(
+    0deg,
+    rgba(18, 25, 33, 1) 0%,
+    rgba(31, 41, 54, 1) 100%
+  );
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.card1 .container img {
+  align-self: start;
+  margin-bottom: 35px;
+  background-color: rgba(255, 255, 255, 0.034);
+  padding: 15px;
+  border-radius: 50%;
+  width: 50px;
+}
+
+.container h1 {
+  margin-bottom: 20px;
+}
+
+.container p {
+  color: hsl(217, 12%, 63%);
+  font-size: 15px;
+  margin-bottom: 20px;
+  line-height: 25px;
+}
+
+.container .btns {
+  align-self: center;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 25px;
+}
+
+.container .btns button {
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: none;
+  font-size: 18px;
+  color: white;
+  background-color: rgba(31, 40, 48, 0.555);
+  transition: 0.4s;
+}
+.container .btns button:hover {
+  background-color: hsla(0, 0%, 0%, 0);
+  color: hsl(25, 97%, 53%);
+}
+
+.container .btns button:focus {
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+}
+
+.container > button {
+  cursor: pointer;
+  margin: 40px auto 0;
+  width: 350px;
+  height: 45px;
+  border: none;
+  border-radius: 50px;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+  transition: 0.4s;
+}
+
+.container > button:hover {
+  color: hsl(25, 97%, 53%);
+  background-color: white;
+}
+
+.card2 .container {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.card2 .your-rate {
+  background-color: rgba(255, 255, 255, 0.034);
+  color: hsl(25, 97%, 53%);
+  margin: 40px;
+  border-radius: 40px;
+  width: auto;
+  padding: 5px 20px;
+  line-height: normal;
+}
+
+@media (max-width: 375px) {
+  .container {
+    width: 375px;
+    padding: auto;
+  }
+  .container > button {
+    width: 300px;
+  }
+}
